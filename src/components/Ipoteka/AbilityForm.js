@@ -29,7 +29,6 @@ function AbilityForm() {
   const calculate = () => {
     const incomWithoutCosts = incom - 1200 - family * 400 - otherPayment - creditPayment - creditCart / 10
     let max65 = incom * 65 / 100 
-
     if (incomWithoutCosts < max65) {
       setMaxCosts(incomWithoutCosts)
     } else {
@@ -39,7 +38,7 @@ function AbilityForm() {
 
   useEffect(() => {
     setSumCosts(maxCosts * 12 * years)
-  }, [maxCosts])
+  }, [maxCosts, years])
 
   useEffect(() => {
     setMaxCredyt(parseInt(sumCosts / (100 + (percent - 1) * years) * 100))

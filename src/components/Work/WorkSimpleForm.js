@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { InputNumber, Label, GapSpan, InputButton, Textarea } from '../common/styled'
+import { InputNumber, Label, GapSpan, InputButton, Textarea, InputRadio } from '../common/styled'
 import InputWrapperRow from '../common/Inputs/InputWrapperRow'
 /**
  * functional react component for ...
@@ -19,9 +19,9 @@ function WorkSimpleForm() {
           імя:
           <GapSpan />
           <InputNumber
-          type="text"
-          name="name "
-        />
+            type="text"
+            name="name"
+          />
         </Label>
       </InputWrapperRow>
 
@@ -31,7 +31,7 @@ function WorkSimpleForm() {
           <GapSpan />
           <InputNumber
           type="number"
-          name="age "
+          name="age"
         />
         </Label>
       </InputWrapperRow>
@@ -39,15 +39,14 @@ function WorkSimpleForm() {
       <InputWrapperRow>
         <Label>
           стать:
-          <InputNumber
+          <InputRadio
             type="radio"
             value="чоловік"
             name="gender"
           />
           чоловік
-        <GapSpan />
         
-          <InputNumber
+          <InputRadio
             type="radio"
             value="жінка"
             name="gender"
@@ -119,15 +118,14 @@ function WorkSimpleForm() {
       <InputWrapperRow>
         <Label>
           чи маєте водійські права?
-          <InputNumber
+          <InputRadio
             type="radio"
             value="yes"
             name="car_id"
           />
           так
-        <GapSpan />
         
-          <InputNumber
+          <InputRadio
             type="radio"
             value="no"
             name="car_id"
@@ -139,15 +137,14 @@ function WorkSimpleForm() {
       <InputWrapperRow>
         <Label>
           чи маєте діючу візу?
-          <InputNumber
+          <InputRadio
             type="radio"
             value="yes"
             name="viza"
           />
           так
-        <GapSpan />
         
-          <InputNumber
+          <InputRadio
             type="radio"
             value="no"
             name="viza"
@@ -180,7 +177,7 @@ function WorkSimpleForm() {
 
       <InputWrapperRow>
         <InputButton variant="primary" type="submit" value="Send">
-          Вислати
+          Відправити
         </InputButton>
       </InputWrapperRow>
 

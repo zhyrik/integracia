@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 
 import { InputNumber, Label, InputGroup,InputBottom, InputButton, BigText } from '../common/styled'
@@ -9,7 +9,7 @@ import { InputNumber, Label, InputGroup,InputBottom, InputButton, BigText } from
  * @param {*} props - props
  * @returns {JSX.Element} - react component
  */
-function HipotekaForm({  }) {
+function HipotekaForm() {
 
   const [kredit, setKredit] = useState(200000)
   const [percent, setPercent] = useState(3.5)

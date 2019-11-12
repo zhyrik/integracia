@@ -11,6 +11,9 @@ export const InputNumber = styled.input`
 
   font-size: 16px;
   letter-spacing: 1px;
+
+  -moz-appearance:textfield;
+  
   &::-webkit-outer-spin-button { 
     -webkit-appearance: none; 
     margin: 0; 
@@ -23,7 +26,17 @@ export const InputNumber = styled.input`
     color: grey;
     font-size: 12px;
   }
+  &::-moz-placeholder { /* Chrome/Opera/Safari */
+    color: grey;
+    font-size: 12px;
+  }
 `
+
+export const InputRadio = styled.input`
+  margin-left: 25px;
+  margin-right: 5px;
+`
+
 export const Textarea = styled.textarea`
   background: transparent;
   color: #ccc;
@@ -33,6 +46,10 @@ export const Textarea = styled.textarea`
   letter-spacing: 1px;
   flex: 1 1 auto;
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: grey;
+    font-size: 12px;
+  }
+  &::-moz-placeholder { /* Chrome/Opera/Safari */
     color: grey;
     font-size: 12px;
   }
@@ -103,12 +120,17 @@ export const H1White = styled.h1`
   margin-top: 10vh;
   text-align: center;
 `
+export const H2White = styled.h2`
+  color: #ccc;
+  letter-spacing: .7px;
+  font-size: 20px;
+  text-align: center;
+`
 export const H3White = styled.h3`
   color: #ccc;
   letter-spacing: .5px;
   font-size: 14px;
-  text-align: center;
-  text-align: center;
+  text-align: ${props => props.align || "center"};;
 `
 
 // span

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 
-import { InputNumber, Label, InputGroup, GapSpan, H3White, InputButton } from '../common/styled'
+import { InputNumber, Label, InputGroup, GapSpan, H3White, InputButton, InputRadio } from '../common/styled'
 
 /**
  * functional react component for ...
@@ -9,7 +9,8 @@ import { InputNumber, Label, InputGroup, GapSpan, H3White, InputButton } from '.
  * @param {*} props - props
  * @returns {JSX.Element} - react component
  */
-function HipotekaRegisterForm({  }) {
+function HipotekaRegisterForm() {
+  /*
   const [name, setName] = useState('')
   const [phone, setPhone] = useState()
   const [email, setEmail] = useState()
@@ -42,9 +43,13 @@ function HipotekaRegisterForm({  }) {
       alert('вкажіть контактні дані')
     }
   }
+  */
 
   return (
-    <form>
+    <form
+      ction="https://formspree.io/xzbbrglw"
+      method="POST"
+    >
       <Row className="align-items-center justify-content-center">
         <Col md="4">
           <InputGroup>
@@ -53,8 +58,8 @@ function HipotekaRegisterForm({  }) {
               <GapSpan />
               <InputNumber
               type="text"
-              value={name}
-              onChange={e => setName(e.target.value)}
+              
+              /*onChange={e => setName(e.target.value)}*/
             />
             </Label>
           </InputGroup>
@@ -69,7 +74,8 @@ function HipotekaRegisterForm({  }) {
               <GapSpan />
               <InputNumber
               type="number"
-              onChange={e => setPhone(e.target.value)}
+              name="phone"
+              /*onChange={e => setPhone(e.target.value)}*/
             />
             </Label>
           </InputGroup>
@@ -83,7 +89,8 @@ function HipotekaRegisterForm({  }) {
               <GapSpan />
               <InputNumber
               type="text"
-              onChange={e => setEmail(e.target.value)}
+              name="email"
+              /*onChange={e => setEmail(e.target.value)}*/
             />
             </Label>
           </InputGroup>
@@ -97,7 +104,8 @@ function HipotekaRegisterForm({  }) {
               <GapSpan />
               <InputNumber
               type="number"
-              onChange={e => setAge(e.target.value)}
+              name="age"
+              /*onChange={e => setAge(e.target.value)}*/
             />
             </Label>
           </InputGroup>
@@ -112,7 +120,8 @@ function HipotekaRegisterForm({  }) {
               <GapSpan />
               <InputNumber
               type="number"
-              onChange={e => setImpruve(e.target.value)}
+              name="incom-zl"
+              /*onChange={e => setImpruve(e.target.value)}*/
             />
             </Label>
           </InputGroup>
@@ -127,7 +136,8 @@ function HipotekaRegisterForm({  }) {
               <GapSpan />
               <InputNumber
               type="number"
-              onChange={e => setFamily(e.target.value)}
+              name="family"
+              /*onChange={e => setFamily(e.target.value)}*/
             />
             </Label>
           </InputGroup>
@@ -142,7 +152,8 @@ function HipotekaRegisterForm({  }) {
               <GapSpan />
               <InputNumber
               type="text"
-              onChange={e => setCity(e.target.value)}
+              name="city"
+              /*onChange={e => setCity(e.target.value)}*/
             />
             </Label>
           </InputGroup>
@@ -154,53 +165,48 @@ function HipotekaRegisterForm({  }) {
           <InputGroup>
             <H3White>Вид зайнятості</H3White>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="work"
-                onChange={e => setJob(e.target.value)}
+                /*onChange={e => setJob(e.target.value)}*/
                 value="умова злеценя"
               />
-              <GapSpan />
               умова злеценя
             </Label>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="work"
-                onChange={e => setJob(e.target.value)}
+                /*onChange={e => setJob(e.target.value)}*/
                 value="умова о праце на час не окресльони"
               />
-              <GapSpan />
               умова о праце на час не окресльони
             </Label>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="work"
-                onChange={e => setJob(e.target.value)}
+                /*onChange={e => setJob(e.target.value)}*/
                 value="умова о праце на час окресльони"
               />
-              <GapSpan />
               умова о праце на час окресльони
             </Label>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="work"
-                onChange={e => setJob(e.target.value)}
+                /*onChange={e => setJob(e.target.value)}*/
                 value="умова о дзело"
               />
-              <GapSpan />
               умова о дзело
             </Label>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="work"
-                onChange={e => setJob(e.target.value)}
+                /*onChange={e => setJob(e.target.value)}*/
                 value="бізнес"
               />
-              <GapSpan />
               бізнес
             </Label>
           </InputGroup>
@@ -212,53 +218,48 @@ function HipotekaRegisterForm({  }) {
           <InputGroup>
             <H3White>Перебування на основі</H3White>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="order"
-                onChange={e => setOrder(e.target.value)}
+                /*onChange={e => setOrder(e.target.value)}*/
                 value="безвіз"
               />
-              <GapSpan />
               безвіз
             </Label>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="order"
-                onChange={e => setOrder(e.target.value)}
+                /*onChange={e => setOrder(e.target.value)}*/
                 value="віза"
               />
-              <GapSpan />
               віза
             </Label>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="work"
-                onChange={e => setOrder(e.target.value)}
+                /*onChange={e => setOrder(e.target.value)}*/
                 value="часовий побут"
               />
-              <GapSpan />
               часовий побут
             </Label>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="work"
-                onChange={e => setOrder(e.target.value)}
+                /*onChange={e => setOrder(e.target.value)}*/
                 value="сталий побут"
               />
-              <GapSpan />
               сталий побут
             </Label>
             <Label>
-              <InputNumber
+              <InputRadio
                 type="radio"
                 name="work"
-                onChange={e => setOrder(e.target.value)}
+                /*onChange={e => setOrder(e.target.value)}*/
                 value="громадянство ЄС"
               />
-              <GapSpan />
               громадянство ЄС
             </Label>
           </InputGroup>
@@ -268,7 +269,7 @@ function HipotekaRegisterForm({  }) {
       <Row className="align-items-center justify-content-center">
         <Col md="4">
           <InputGroup>
-            <InputButton onClick={e => sent(e)}>Відправити</InputButton>
+            <InputButton type="submit" value="Send">Відправити</InputButton>
           </InputGroup>
         </Col>
       </Row>

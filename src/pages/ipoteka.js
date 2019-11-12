@@ -2,10 +2,11 @@ import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 
 import Layout from '../components/Layouts/Layout'
+import SEO from "../components/seo"
 import AbilityForm from '../components/Ipoteka/AbilityForm'
 import HipotekaForm from '../components/Ipoteka/HipotekaForm'
 import HipotekaRegisterForm from '../components/Ipoteka/HipotekaRegisterForm'
-import { H1White, H3White } from '../components/common/styled'
+import { H1White, H3White, H2White } from '../components/common/styled'
 
 
 /**
@@ -17,30 +18,41 @@ function Ipoteka() {
 
   return (
     <Layout>
+      <SEO
+        title="Каркулятори кредитоспроможності, іпотечний, кредитний Польща"
+        description="За допомогою наших каркуляторів виможете визначити кредитоспроможність (максимально можливу суму кредиту), розрахувати місячну ефективну ставку іпотечного кредиту, kalkulator zdolności kredytowej, kalkulator hipoteczny"
+        lang="uk"
+      />
 
-      <Row>
-        <Col>
-          <H1White>Каркулятор оцінки Кредитоспроможності</H1White>
-          <H3White>Калькулятор кредитоспроможності (скоринг): розрахувати максимальну можливу суму іпотечного кредиту</H3White>
-          <AbilityForm />
-        </Col>
-      </Row>
+      <section>
+        <Row>
+          <Col>
+            <H1White>Каркулятор оцінки Кредитоспроможності</H1White>
+            <H3White>Калькулятор кредитоспроможності (скоринг): розрахувати максимальну можливу суму іпотечного кредиту</H3White>
+            <AbilityForm />
+          </Col>
+        </Row>
+      </section>
 
-      <Row>
-        <Col>
-          <H1White>КРЕДИТНИЙ КАЛЬКУЛЯТОР - ІПОТЕЧНИЙ КРЕДИТ</H1White>
-          <H3White>Калькулятор іпотеки онлайн дозволяє: розрахувати ефективну ставку за кредитом на купівлю квартири або житла, довідатися розмір щомісячного платежу за іпотечним кредитом</H3White>
-          <HipotekaForm />
-        </Col>
-      </Row>
+      <section>
+        <Row>
+          <Col>
+            <H2White>КРЕДИТНИЙ КАЛЬКУЛЯТОР - ІПОТЕЧНИЙ КРЕДИТ</H2White>
+            <H3White>Калькулятор іпотеки онлайн дозволяє: розрахувати ефективну ставку за кредитом на купівлю квартири або житла, довідатися розмір щомісячного платежу за іпотечним кредитом</H3White>
+            <HipotekaForm />
+          </Col>
+        </Row>
+      </section>
 
-      <Row>
-        <Col>
-          <H1White>Анкета</H1White>
-          <H3White>Заповніть анкету і отримайте БЕЗКОШТОВНУ допомогу або консультації для отримання кредиту</H3White>
-          <HipotekaRegisterForm />
-        </Col>
-      </Row>
+      <section>
+        <Row>
+          <Col>
+            <H2White>Анкета</H2White>
+            <H3White>Заповніть анкету і отримайте БЕЗКОШТОВНУ допомогу або консультації для отримання кредиту</H3White>
+            <HipotekaRegisterForm />
+          </Col>
+        </Row>
+      </section>
 
     </Layout>
   )
