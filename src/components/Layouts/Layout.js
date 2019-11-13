@@ -12,7 +12,7 @@ import Header from './Header'
  */
 function Layout({ children }) {
   return (
-    <Container style={{ color: '#ccc' }}>
+    <Container>
       <Header>header</Header>
       <main>{children}</main>
       <footer>footer</footer>

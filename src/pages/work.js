@@ -17,7 +17,7 @@ function Ipoteka() {
   return (
     <Layout>
       <SEO
-        title="Робота в Польщі, Німеччині, бесплатні вакансії, praca w Polsce"
+        title="Робота в Польщі, praca w Polsce"
         description="Ми пропонуємо найкращі вакансії в Польщі, Німеччині. Вакансії бесплатні.  робота на агенці і від прямих роботодавців. Praca w Polsce dla ukraincuw."
         lang="uk"
       />

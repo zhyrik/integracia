@@ -15,7 +15,6 @@ function Apartaments() {
     <Layout>
       <SEO
         title="Оренда і купівля житла, квартир, домів Вроцлав"
-        description="житло"
         lang="uk"
       />
 

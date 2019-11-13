@@ -13,7 +13,9 @@ const StyledLink = styled(Link)`
     color: white;
   }
 `
-
+const NAVBAR = styled(Navbar.Collapse)`
+  justify-content: flex-end!important;
+`
 /**
  * functional react component for ...
  * @function
@@ -24,9 +26,9 @@ function Header() {
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand href="#home" style={{color: '#fff'}}>Агенція інтеграції</Navbar.Brand>
+        <Navbar.Brand href="#home" >Агенція інтеграції</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" style={{ justifyContent: 'flex-end'}}>
+        <NAVBAR id="basic-navbar-nav" >
           <Nav className="">
             <StyledLink to="/">home</StyledLink>
             <StyledLink to="/ipoteka/">кредити</StyledLink>
@@ -35,7 +37,7 @@ function Header() {
             <StyledLink to="/orders/">документи</StyledLink>
             <StyledLink to="/adress/">контакти</StyledLink>
           </Nav>
-        </Navbar.Collapse>
+        </NAVBAR>
       </Navbar>
     </header>
   )
