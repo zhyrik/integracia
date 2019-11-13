@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `ми допомагаємо українцям в Польщі`,
     description: `Агенція інтеграції українців в Польщі. Ми надаємо широкий спектр послуг, пошук роботи, вакансії, візи, освядченя , оформлення іпотеки, кредити, пошук житла, оренда, карти побиту, консультації`,
-    author: `@zhurik`
+    author: `@zhurik`,
+    siteUrl: 'https://mystifying-lovelace-f6fbfb.netlify.com/'
   },
   plugins: [
     {
@@ -32,18 +33,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        query: `{
-          site: MyCustomDataSource {
-            siteMetadata {
-              siteUrl
-            }
-          }
-        }`
-      }
-    },
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
