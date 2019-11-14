@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Header from './Header'
+import Footer from './Footer'
 
 /**
  * functional react component for layout template
@@ -15,7 +16,7 @@ function Layout({ children }) {
     <Container>
       <Header>header</Header>
       <main>{children}</main>
-      <footer>footer</footer>
+      <Footer>footer</Footer>
     </Container>
   )
 }
