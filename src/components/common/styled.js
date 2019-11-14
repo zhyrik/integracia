@@ -76,8 +76,8 @@ export const InputGroup = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(100, 100, 100, 0.5);
-  padding: 10px;
-  margin: 15px 0;
+  padding: 6px;
+  margin: 8px 0;
   border-radius: 5px;
   height: calc(100% - 20px);
   transition: all 0.3s;
@@ -136,4 +136,14 @@ export const H3White = styled.h3`
 // span
 export const GapSpan = styled.span`
   padding: 0 8px;
+`
+
+// semantick
+export const Sectiion = styled.section`
+  margin: 10vh 0;
+`
+export const FooterWrap = styled.section`
+  margin: 10vh 0 0 0;
+  padding: 30px 10px;
+  ;
 `

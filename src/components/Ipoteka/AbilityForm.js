@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { FacebookProvider, MessageUs } from 'react-facebook'
 
-//import { InputStyle, InputBottom, InputLabel, InputP } from '../common/formStyle'
-import { InputNumber, Label, InputGroup,InputBottom, InputButton, BigText } from '../common/styled'
+import Message from '../common/contact/message'
+import { InputNumber, Label, InputGroup,InputBottom, InputButton, BigText, } from '../common/styled'
 import './AbilityForm.css'
 /**
  * functional react component for ...
@@ -235,7 +236,8 @@ function AbilityForm() {
             <InputButton variant="primary" type="button" onClick={calculate}>
               РОЗРАХУВАТИ
             </InputButton>
-            <BigText>максимальний кредит <br/> {maxCredyt} zl</BigText>
+            <BigText>максимальний кредит {maxCredyt} zl</BigText>
+            <Message />
           </InputGroup >
         </Col>
 
