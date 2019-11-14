@@ -32,10 +32,10 @@ function Header() {
           <Nav className="">
             <StyledLink to="/">home</StyledLink>
             <StyledLink to="/ipoteka/">кредити</StyledLink>
-            <StyledLink to="/work/">робота</StyledLink>
-            <StyledLink to="/apartaments/">житло</StyledLink>
-            <StyledLink to="/orders/">документи</StyledLink>
-            <StyledLink to="/adress/">контакти</StyledLink>
+            <StyledLink to="/rabota/">робота</StyledLink>
+            <StyledLink to="/mieszkania/">житло</StyledLink>
+            <StyledLink to="/dokumenty/">документи</StyledLink>
+            <StyledLink to="/kontakty/">контакти</StyledLink>
           </Nav>
         </NAVBAR>
       </Navbar>

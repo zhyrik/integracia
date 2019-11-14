@@ -14,8 +14,9 @@ function Apartaments() {
   return (
     <Layout>
       <SEO
-        title="Оренда і купівля житла, квартир, домів Вроцлав"
+        title="Оренда і купівля житла, квартир Вроцлав"
         lang="uk"
+        description="Оренда і продаж житла Вроцлав. Nieruchomosci, mieszkania, domy ma wynajem Wroclaw"
       />
 
       <section>
