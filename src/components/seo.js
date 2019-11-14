@@ -11,7 +11,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site,  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -37,7 +37,11 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `og:image`,
-          content: '/icons/icon-256x256.png',
+          content: 'https://images-na.ssl-images-amazon.com/images/I/31Hbks3SskL._AC_UL160_.jpg',
+        },
+        {
+          name: `og:url`,
+          content: 'https://mystifying-lovelace-f6fbfb.netlify.com',
         },
         {
           name: `description`,
