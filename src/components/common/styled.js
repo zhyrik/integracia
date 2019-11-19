@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const InputNumber = styled.input`
   background: transparent;
-  color: #ccc;
+  color: #eee;
   border: none;
   outline: none;
   
@@ -39,7 +39,7 @@ export const InputRadio = styled.input`
 
 export const Textarea = styled.textarea`
   background: transparent;
-  color: #ccc;
+  color: #eee;
   border: none;
   outline: none;
   font-size: 16px;
@@ -56,7 +56,7 @@ export const Textarea = styled.textarea`
 `
 
 export const Label = styled.label`
-  color: #ccc;
+  color: #eee;
   font-size: 14px;
   margin: 0;
   letter-spacing: 1px;
@@ -93,18 +93,18 @@ export const InputButton = styled.button`
   border-radius: 8px;
   outline: none!important;
   color: #222;
-  background: #ccc;
+  background: #eee;
   text-align: center;
-  height: 50px;
+  height: 40px;
   transition: all 0.3s;
   &:hover{
     background: black;
-    color: #ccc;
-    border: #ccc 1px solid;
+    color: #eee;
+    border: #eee 1px solid;
   }
 `
 export const BigText = styled.div`
-  color: #ccc;
+  color: #eee;
   letter-spacing: 0.8px;
   font-size: 20px;
   text-align: center;
@@ -112,25 +112,51 @@ export const BigText = styled.div`
 
 // h1-h6
 export const H1White = styled.h1`
-  color: #ccc;
+  color: #eee;
   letter-spacing: 1px;
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 10vh;
   text-align: center;
 `
 export const H2White = styled.h2`
-  color: #ccc;
+  color: #eee;
   letter-spacing: .7px;
   font-size: 20px;
   text-align: center;
 `
 export const H3White = styled.h3`
-  color: #ccc;
+  color: #eee;
+  letter-spacing: .5px;
+  font-size: ${props => props.size || '14px' };
+  text-align: ${props => props.align || "center"};
+`
+export const H4White = styled.h4`
+  color: #eee;
   letter-spacing: .5px;
   font-size: 14px;
-  text-align: ${props => props.align || "center"};;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: ${props => props.align || "start"};
+`
+export const P = styled.p`
+  color: #eee;
+  font-size: ${props => props.size || '13px'};
+  line-height: 24px;
+  text-align: ${props => props.align || "start"};
+  letter-spacing: 1px;
+`
+export const A = styled.a`
+  color: #eeec;
+  font-size: ${props => props.size || '17px'};
+  text-align: ${props => props.align || "start"};
+  display: block;
+  padding: 5px 0;
+  transition: all .3s;
+`
+export const Mark = styled.mark`
+  color: #fff;
+  background: #212529;
 `
 
 // span
@@ -139,11 +165,49 @@ export const GapSpan = styled.span`
 `
 
 // semantick
-export const Sectiion = styled.section`
-  margin: 10vh 0;
+export const Section = styled.section`
+  margin: ${props => props.margin || '10vh 0 0 0' };
+  padding: ${props => props.padding || '30px 0' };
+`
+export const ArticleCard = styled.article`
+  margin: ${props => props.margin || '10vh 0 0 0' };
+  border: 1px solid #333;
+  height: calc(100% - 30px);
+`
+export const ArticleCartext = styled.div`
+  padding: 6vh 2vw 0;
 `
 export const FooterWrap = styled.section`
   margin: 10vh 0 0 0;
   padding: 30px 10px;
   ;
 `
+export const Article = styled.article`
+  padding: 15px 0;
+`
+// img
+export const IMG = styled.img`
+display: block;
+  max-width: 100%;
+  height: auto;
+  margin: ${props => props.margin || '0 auto' };
+`
+
+export const Overlay = styled.div`
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+`
+

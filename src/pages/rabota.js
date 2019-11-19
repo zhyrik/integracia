@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 import Layout from '../components/Layouts/Layout'
 import SEO from "../components/seo"
 import WorkSimpleForm from '../components/Work/WorkSimpleForm'
-import { H1White, H3White } from '../components/common/styled'
+import { H1White, H3White, Section } from '../components/common/styled'
 
 
 /**
@@ -22,7 +22,7 @@ function Ipoteka() {
         lang="uk"
       />
 
-      <section>
+      <Section>
         <Row>
           <Col>
             <H1White>Анкета працівника</H1White>
@@ -30,7 +30,7 @@ function Ipoteka() {
             <WorkSimpleForm />
           </Col>
         </Row>
-      </section>
+      </Section>
 
     </Layout>
   )

@@ -35,6 +35,7 @@ function Header() {
             <StyledLink to="/rabota/">робота</StyledLink>
             <StyledLink to="/mieszkania/">житло</StyledLink>
             <StyledLink to="/dokumenty/">документи</StyledLink>
+            <StyledLink to="/articles/">поради</StyledLink>
             <StyledLink to="/kontakty/">контакти</StyledLink>
           </Nav>
         </NAVBAR>

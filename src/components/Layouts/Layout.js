@@ -13,11 +13,13 @@ import Footer from './Footer'
  */
 function Layout({ children }) {
   return (
+    <>
     <Container>
-      <Header>header</Header>
+      <Header />
       <main>{children}</main>
-      <Footer>footer</Footer>
     </Container>
+    <Footer />
+    </>
   )
 }
 

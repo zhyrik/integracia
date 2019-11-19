@@ -6,8 +6,8 @@ import SEO from "../components/seo"
 import AbilityForm from '../components/Ipoteka/AbilityForm'
 import HipotekaForm from '../components/Ipoteka/HipotekaForm'
 import HipotekaRegisterForm from '../components/Ipoteka/HipotekaRegisterForm'
-import { H1White, H3White, H2White } from '../components/common/styled'
-
+import { H1White, H3White, H2White, Section } from '../components/common/styled'
+import KreditArticle from '../components/Ipoteka/KreditArticle'
 
 /**
  * functional react component for ipoteka page
@@ -24,7 +24,7 @@ function Ipoteka() {
         lang="uk"
       />
 
-      <section>
+      <Section>
         <Row>
           <Col>
             <H1White>Каркулятор оцінки Кредитоспроможності</H1White>
@@ -32,9 +32,9 @@ function Ipoteka() {
             <AbilityForm />
           </Col>
         </Row>
-      </section>
+      </Section>
 
-      <section>
+      <Section>
         <Row>
           <Col>
             <H2White>КРЕДИТНИЙ КАЛЬКУЛЯТОР - ІПОТЕЧНИЙ КРЕДИТ</H2White>
@@ -42,9 +42,9 @@ function Ipoteka() {
             <HipotekaForm />
           </Col>
         </Row>
-      </section>
+      </Section>
 
-      <section>
+      <Section id="anketa">
         <Row>
           <Col>
             <H2White>Анкета</H2White>
@@ -52,7 +52,9 @@ function Ipoteka() {
             <HipotekaRegisterForm />
           </Col>
         </Row>
-      </section>
+      </Section>
+
+      <KreditArticle />
 
     </Layout>
   )

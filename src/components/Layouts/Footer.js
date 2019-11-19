@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import { FacebookProvider, Like, Comments, MessageUs } from 'react-facebook'
+import { FacebookProvider, Like, Comments } from 'react-facebook'
+import { Row, Col, Container } from 'react-bootstrap'
+import Adress from '../common/contact/adress'
 
 import Share from '../common/contact/share'
-import { FooterWrap } from '../common/styled'
+import { FooterWrap, P } from '../common/styled'
 
 /**
  * functional react component for Footer component
@@ -14,11 +16,18 @@ class Footer extends Component {
   render() {
     return (
       <FooterWrap className="bg-dark">
-        <Share />
-        <FacebookProvider appId="473655019918357">
-          <Like href="https://www.facebook.com/Іпотека-кредити-Польща-113438570105835/" colorScheme="dark"/>
-          <Comments href="https://www.facebook.com/Іпотека-кредити-Польща-113438570105835/" />
-        </FacebookProvider>  
+        <Container>
+          <Row>
+            <Col md="6">
+              <P size="20px">Контакти:</P>
+              <Adress />
+            </Col>
+            <Col md="6">
+              <P size="20px">Поширити:</P>
+              <Share />
+            </Col>
+          </Row>
+        </Container>
       </FooterWrap>
     )
   }

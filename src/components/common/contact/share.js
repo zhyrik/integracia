@@ -1,6 +1,8 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 
+import { A } from '../styled'
+
 import { FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
@@ -52,29 +54,31 @@ const shareArr = [
   { buttton: TwitterShareButton,icon: TwitterIcon },
   { buttton: TelegramShareButton,icon: TelegramIcon },
   { buttton: WhatsappShareButton,icon: WhatsappIcon },
-  { buttton: PinterestShareButton,icon: PinterestIcon },
+  /*{ buttton: PinterestShareButton,icon: PinterestIcon },*/
   { buttton: VKShareButton,icon: VKIcon },
   { buttton: OKShareButton,icon: OKIcon },
-  { buttton: RedditShareButton,icon: RedditIcon },
+  /*{ buttton: RedditShareButton,icon: RedditIcon },
   { buttton: TumblrShareButton,icon: TumblrIcon },
   { buttton: LivejournalShareButton,icon: LivejournalIcon },
-  { buttton: MailruShareButton,icon: MailruIcon },
+  { buttton: MailruShareButton,icon: MailruIcon },*/
   { buttton: ViberShareButton,icon: ViberIcon },
-  { buttton: WorkplaceShareButton,icon: WorkplaceIcon },
+  /*{ buttton: WorkplaceShareButton,icon: WorkplaceIcon },
   { buttton: LineShareButton,icon: LineIcon },
   { buttton: PocketShareButton,icon: PocketIcon },
-  { buttton: InstapaperShareButton,icon: InstapaperIcon },
+  { buttton: InstapaperShareButton,icon: InstapaperIcon },*/
   { buttton: EmailShareButton, icon: EmailIcon }
 ]
 function Share() {
   const shareUrl = 'https://mystifying-lovelace-f6fbfb.netlify.com/'
   return (
     <Row>
-      {shareArr.map(share => (
-        <Col>
-          <share.buttton url={shareUrl}>
-            <share.icon size={32} round={true} />
-          </share.buttton>
+      {shareArr.map((share, index) => (
+        <Col key={index}>
+          <A href="">
+            <share.buttton url={shareUrl}>
+              <share.icon size={32} round={true} />
+            </share.buttton>
+          </A>
         </Col>
       ))}
     </Row>

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { FacebookProvider, MessageUs } from 'react-facebook'
 
-import Message from '../common/contact/message'
 import { InputNumber, Label, InputGroup,InputBottom, InputButton, BigText, } from '../common/styled'
 import './AbilityForm.css'
+import Overlay from '../common/contact/overlay'
 /**
  * functional react component for ...
  * @function
@@ -27,6 +26,9 @@ function AbilityForm() {
   const [sumCosts, setSumCosts] = useState(576000)
   const [maxCredyt, setMaxCredyt] = useState(329142)
 
+  //flag
+  const [openOverlay, setOpenOverlay] = useState(false)
+
   const calculate = () => {
     const incomWithoutCosts = incom - 1200 - family * 400 - otherPayment - creditPayment - creditCart / 10
     let max65 = incom * 65 / 100 
@@ -35,6 +37,11 @@ function AbilityForm() {
     } else {
       setMaxCosts(max65)
     }
+    setOpenOverlay(true)
+  }
+
+  const closeOverlay = () => {
+    setOpenOverlay(false)
   }
 
   useEffect(() => {
@@ -236,13 +243,14 @@ function AbilityForm() {
             <InputButton variant="primary" type="button" onClick={calculate}>
               РОЗРАХУВАТИ
             </InputButton>
-            <BigText>максимальний кредит {maxCredyt} zl</BigText>
-            <Message />
           </InputGroup >
         </Col>
 
       </Row>
       
+      {openOverlay && 
+        <Overlay money={maxCredyt} text="Вавша кредитоздатність:" close={closeOverlay}/>
+      }
     </form>
   )
 }

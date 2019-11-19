@@ -3,14 +3,15 @@ import { Row, Col } from 'react-bootstrap'
 
 import Layout from "../components/Layouts/Layout"
 import SEO from "../components/seo"
-import { H1White, H3White } from "../components/common/styled"
+import { H1White, Section } from "../components/common/styled"
+import Adress from '../components/common/contact/adress'
 
 /**
  * functional react component for oreders page
  * @function
  * @returns {JSX.Element} - react component
  */
-function Adress() {
+function AdressPage() {
   return (
     <Layout>
       <SEO
@@ -19,18 +20,17 @@ function Adress() {
         lang="uk"
       />
 
-      <section>
+      <Section>
         <Row>
           <Col>
             <H1White>Наші контакти</H1White>
-            <H3White>телефон: </H3White>
-            <H3White>емейл: </H3White>
+            <Adress />
           </Col>
         </Row>
-      </section>
+      </Section>
       
     </Layout>
   )
 }
 
-export default Adress
+export default AdressPage

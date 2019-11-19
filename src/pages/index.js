@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/Layouts/Layout"
 import SEO from "../components/seo"
-import { H1White, H2White, H3White } from "../components/common/styled"
+import { H1White, H2White, H3White, Section } from "../components/common/styled"
 import IndexForm from '../components/index/IndexForm'
 
 const IndexPage = () => (
@@ -11,7 +11,7 @@ const IndexPage = () => (
       title="Агенція інтегрфції"
       lang="uk"
     />
-    <section>
+    <Section>
       <H1White>Агенція</H1White>
       <H2White>Ми допомагаємо українцям в Польщі</H2White>
       <H3White align="start">- допомога в оформлені кредитів(іпотеки)</H3White>
@@ -23,12 +23,12 @@ const IndexPage = () => (
       <H3White align="start">- допомога і супровід виготовлення карти побиту</H3White>
       <H3White align="start">- реєстрація автомобіля</H3White>
       <H3White align="start">- громадянство Польщі (тільки для власників карти поляка)</H3White>
-    </section>
-    <section>
+    </Section>
+    <Section>
       <H2White>Отримати консультацію</H2White>
       <H3White>Задайте своє питання і ми звяжемося з Вами!</H3White>
       <IndexForm />
-    </section>
+    </Section>
   </Layout>
 )
 

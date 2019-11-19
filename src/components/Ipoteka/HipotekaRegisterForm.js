@@ -3,6 +3,8 @@ import { Col, Row } from 'react-bootstrap'
 
 import { InputNumber, Label, InputGroup, GapSpan, H3White, InputButton, InputRadio } from '../common/styled'
 
+// mongodb+srv://zhurik:<password>@cluster0-jgupp.mongodb.net/integracia?retryWrites=true&w=majority
+
 /**
  * functional react component for ...
  * @function
