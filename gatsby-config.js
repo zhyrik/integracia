@@ -12,6 +12,7 @@ module.exports = {
     siteUrl: 'https://mystifying-lovelace-f6fbfb.netlify.com/'
   },
   plugins: [
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

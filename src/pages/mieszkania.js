@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 
 import Layout from "../components/Layouts/Layout"
 import SEO from "../components/seo"
-import { H1White, H3White } from "../components/common/styled"
+import { H1White, H3White, Section } from "../components/common/styled"
 
 /**
  * functional react component for apartaments page
@@ -19,14 +19,14 @@ function Apartaments() {
         description="Оренда і продаж житла Вроцлав. Nieruchomosci, mieszkania, domy ma wynajem Wroclaw"
       />
 
-      <section>
+      <Section>
         <Row>
           <Col>
             <H1White>Наші послуги</H1White>
             <H3White>докуменди</H3White>
           </Col>
         </Row>
-      </section>
+      </Section>
       
     </Layout>
   )
