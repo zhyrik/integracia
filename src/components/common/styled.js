@@ -1,9 +1,9 @@
-import React from 'react'
+
 import styled from 'styled-components'
 
 export const InputNumber = styled.input`
   background: transparent;
-  color: #eee;
+  color: var(--light);
   border: none;
   outline: none;
   
@@ -39,7 +39,7 @@ export const InputRadio = styled.input`
 
 export const Textarea = styled.textarea`
   background: transparent;
-  color: #eee;
+  color: var(--light);
   border: none;
   outline: none;
   font-size: 16px;
@@ -56,7 +56,7 @@ export const Textarea = styled.textarea`
 `
 
 export const Label = styled.label`
-  color: #eee;
+  color: var(--light);
   font-size: 14px;
   margin: 0;
   letter-spacing: 1px;
@@ -66,7 +66,7 @@ export const Label = styled.label`
 `
 
 export const InputBottom = styled.p`
-  color: white;
+  color: var(--light);
   letter-spacing: 0.3px;
   font-size: 12px;
   margin: 0;
@@ -85,7 +85,7 @@ export const InputGroup = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.5);
   }
   &:hover input {
-    color: white;
+    color: var(--light);
   }
 `
 export const InputButton = styled.button`
@@ -93,18 +93,19 @@ export const InputButton = styled.button`
   border-radius: 8px;
   outline: none!important;
   color: #222;
-  background: #eee;
+  background: var(--light);
   text-align: center;
   height: 40px;
   transition: all 0.3s;
+  padding: 0 20px;
   &:hover{
-    background: black;
-    color: #eee;
-    border: #eee 1px solid;
+    background: #181819;
+    color: var(--light);
+    border: var(--light) 1px solid;
   }
 `
 export const BigText = styled.div`
-  color: #eee;
+  color: var(--light);
   letter-spacing: 0.8px;
   font-size: 20px;
   text-align: center;
@@ -112,7 +113,7 @@ export const BigText = styled.div`
 
 // h1-h6
 export const H1White = styled.h1`
-  color: #eee;
+  color: var(--light);
   letter-spacing: 1px;
   font-size: 24px;
   text-align: center;
@@ -120,19 +121,19 @@ export const H1White = styled.h1`
   text-align: center;
 `
 export const H2White = styled.h2`
-  color: #eee;
+  color: var(--light);
   letter-spacing: .7px;
   font-size: 20px;
   text-align: center;
 `
 export const H3White = styled.h3`
-  color: #eee;
+  color: var(--light);
   letter-spacing: .5px;
   font-size: ${props => props.size || '14px' };
   text-align: ${props => props.align || "center"};
 `
 export const H4White = styled.h4`
-  color: #eee;
+  color: var(--light);
   letter-spacing: .5px;
   font-size: 14px;
   text-transform: uppercase;
@@ -140,14 +141,14 @@ export const H4White = styled.h4`
   text-align: ${props => props.align || "start"};
 `
 export const P = styled.p`
-  color: #eee;
+  color: var(--light);
   font-size: ${props => props.size || '13px'};
   line-height: 24px;
   text-align: ${props => props.align || "start"};
   letter-spacing: 1px;
 `
 export const A = styled.a`
-  color: #eeec;
+  color: var(--light);
   font-size: ${props => props.size || '17px'};
   text-align: ${props => props.align || "start"};
   display: block;
@@ -155,7 +156,7 @@ export const A = styled.a`
   transition: all .3s;
 `
 export const Mark = styled.mark`
-  color: #fff;
+  color: var(--light);
   background: #212529;
 `
 
@@ -198,8 +199,8 @@ export const Overlay = styled.div`
   z-index: 2;
   width: 100vw;
   height: 100vh;
-  background: black;
-  color: white;
+  background: #181819;
+  color: var(--light);
   display: flex;
   justify-content: center;
   align-items: center;

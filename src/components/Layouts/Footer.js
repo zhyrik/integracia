@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { FacebookProvider, Like, Comments } from 'react-facebook'
 import { Row, Col, Container } from 'react-bootstrap'
 import Adress from '../common/contact/adress'
 
