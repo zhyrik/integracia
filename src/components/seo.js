@@ -13,7 +13,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import img from '../images/gatsby-icon.png'
 
 function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+  const { site, placeholderImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -21,6 +21,13 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+          }
+        }
+        placeholderImage: file(relativePath: {eq: "gatsby-icon.png"}) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              src
+            }
           }
         }
       }
@@ -39,7 +46,7 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `og:image`,
-          content: 'https://images.ctfassets.net/bxof2jv2ip32/6AeAyz99KPmc8WmDArSV7M/74c4de0cf2900fb986814ca3ac49e833/home4.jpg?w=800&q=50',
+          content: placeholderImage.childImageSharp.fluid.src,
         },
         {
           name: `og:url`,
