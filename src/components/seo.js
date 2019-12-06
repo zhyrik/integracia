@@ -39,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `og:image`,
-          content: img,
+          content: 'https://images.ctfassets.net/bxof2jv2ip32/6AeAyz99KPmc8WmDArSV7M/74c4de0cf2900fb986814ca3ac49e833/home4.jpg?w=800&q=50',
         },
         {
           name: `og:url`,
