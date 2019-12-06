@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import img from '../images/gatsby-icon.png'
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -37,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `og:image`,
-          content: 'https://images-na.ssl-images-amazon.com/images/I/31Hbks3SskL._AC_UL160_.jpg',
+          content: img,
         },
         {
           name: `og:url`,

@@ -1,8 +1,8 @@
 import React from 'react'
 import { FacebookProvider, Like } from 'react-facebook'
+import { Row } from 'react-bootstrap'
 
-import Message from './message'
-import { H3White, Section, H2White, InputButton, Overlay } from "../styled"
+import { H3White, Section, H2White, InputButton, Overlay, MessageUs } from "../styled"
 import Share from './share'
 /**
  * functional react component for ...
@@ -31,10 +31,12 @@ function OverlayComponent({ text, money, close }) {
       <H3White>
         Підтримайте нас в соцмережах
       </H3White>
-      <FacebookProvider appId="473655019918357">
-        <Like href="https://www.facebook.com/Іпотека-кредити-Польща-113438570105835/" colorScheme="dark"/>
-        <Message />
-      </FacebookProvider>
+      <Row>
+        <FacebookProvider appId="473655019918357">
+          <Like href="https://www.facebook.com/Іпотека-кредити-Польща-113438570105835/" colorScheme="dark"/>
+          <MessageUs messengerAppId="473655019918357" pageId="113438570105835"/>
+        </FacebookProvider>
+      </Row>
 
       <Share />
       </Section>
