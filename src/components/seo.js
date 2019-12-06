@@ -21,13 +21,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
-          }
-        }
-        placeholderImage: file(relativePath: {eq: "gatsby-icon.png"}) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              src
-            }
+            defaultImage
           }
         }
       }
@@ -46,7 +40,7 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `og:image`,
-          content: placeholderImage.childImageSharp.fluid.src,
+          content: site.siteMetadata.defaultImage,
         },
         {
           name: `og:url`,

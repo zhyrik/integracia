@@ -9,7 +9,8 @@ module.exports = {
     title: `квартири, іпотека`,
     description: `Ми надаємо широкий спектр послуг, пошук роботи, вакансії, візи, освядченя , оформлення іпотеки, кредити, пошук житла, оренда, карти побиту`,
     author: `@zhurik`,
-    siteUrl: 'https://mystifying-lovelace-f6fbfb.netlify.com/'
+    siteUrl: 'https://mystifying-lovelace-f6fbfb.netlify.com/',
+    defaultImage: 'https://bucket.justjoin.it/justjoinit-cover.png'
   },
   plugins: [
     `gatsby-plugin-offline`,
@@ -71,7 +72,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
