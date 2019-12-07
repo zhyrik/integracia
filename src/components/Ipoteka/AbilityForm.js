@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Col, Row } from 'react-bootstrap'
 
-import { InputNumber, Label, InputGroup,InputBottom, InputButton, BigText, } from '../common/styled'
+import { InputNumber, Label, InputGroup,InputBottom, InputButton } from '../common/styled'
 import './AbilityForm.css'
 import Overlay from '../common/contact/overlay'
 /**

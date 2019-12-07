@@ -6,7 +6,7 @@ import {
   FacebookIcon
 } from 'react-share'
 
-import { P, A } from '../styled'
+import { A } from '../styled'
 /**
  * functional react component for adress commponent
  * @param {*} props - props
