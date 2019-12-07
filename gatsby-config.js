@@ -10,7 +10,7 @@ module.exports = {
     description: `Ми надаємо широкий спектр послуг, пошук роботи, вакансії, візи, освядченя , оформлення іпотеки, кредити, пошук житла, оренда, карти побиту`,
     author: `@zhurik`,
     siteUrl: 'https://mystifying-lovelace-f6fbfb.netlify.com/',
-    defaultImage: '/images/og.jpg'
+    defaultImage: '/images/default-og.jpg'
   },
   plugins: [
     `gatsby-plugin-offline`,
