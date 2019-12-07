@@ -42,7 +42,7 @@ module.exports = {
         experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
         // Set Variation ID. 0 for original 1,2,3....
         variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // Any additional optional fields
+        // Any additional optional fieldss
         sampleRate: 5,
         siteSpeedSampleRate: 10,
         cookieDomain: "mystifying-lovelace-f6fbfb.netlify.com",
