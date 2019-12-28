@@ -19,8 +19,6 @@ function ArticlePost({ data }) {
   const { description } = data.contentfulArticle.description
   const array = data.contentfulArticle.data
 
-  console.log(data)
-
   return (
     <Layout>
       <SEO

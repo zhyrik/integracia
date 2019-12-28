@@ -1,6 +1,6 @@
 body{
-  background: #181819;
-  font-family: open sans,arial,sans-serif
+  background: #000;
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,Helvetica,sans-serif;
 }
 .range {
   -webkit-appearance: none;

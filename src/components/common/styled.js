@@ -67,7 +67,6 @@ export const Label = styled.label`
 
 export const InputBottom = styled.p`
   color: var(--light);
-  letter-spacing: 0.3px;
   font-size: 12px;
   margin: 0;
 `
@@ -145,14 +144,16 @@ export const P = styled.p`
   font-size: ${props => props.size || '13px'};
   line-height: 24px;
   text-align: ${props => props.align || "start"};
-  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 `
 export const A = styled.a`
   color: var(--light);
   font-size: ${props => props.size || '17px'};
   text-align: ${props => props.align || "start"};
   display: block;
-  padding: 5px 0;
+  padding: 2px 0;
   transition: all .3s;
 `
 export const Mark = styled.mark`
@@ -180,7 +181,7 @@ export const ArticleCartext = styled.div`
 `
 export const FooterWrap = styled.section`
   margin: 10vh 0 0 0;
-  padding: 30px 10px;
+  padding: 20px 10px 0px;
   ;
 `
 export const Article = styled.article`

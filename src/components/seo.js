@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-      console.log(site.siteMetadata.defaultImage)
+  
   return (
     <Helmet
       htmlAttributes={{
@@ -82,7 +82,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `uk`,
   meta: [],
   description: ``,
 }

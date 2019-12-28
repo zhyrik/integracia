@@ -58,7 +58,7 @@ function Share() {
         <Col key={index}>
           <A href="">
             <share.buttton url={shareUrl}>
-              <share.icon size={32} round={true} />
+              <share.icon size={25} round={true} />
             </share.buttton>
           </A>
         </Col>
