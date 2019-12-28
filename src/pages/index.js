@@ -8,7 +8,7 @@ import IndexForm from '../components/index/IndexForm'
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Агенція інтеграції"
+      title="Wroclaw"
       lang="uk"
     />
     <Section>
