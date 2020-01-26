@@ -31,13 +31,13 @@ function Adress() {
       <A href="viber://add?number=48662717018">
         <Row className="justify-content-start">
           <Col xs="2"><ViberIcon size={25} round={true} /></Col>
-          <Col>viber: 48 662 717 018</Col>
+          <Col>viber: 48 574 500 298</Col>
         </Row>
       </A>
       <A href="tel:48662717018">
         <Row className="justify-content-start">
           <Col xs="2"><WhatsappIcon size={25} round={true} /></Col>
-          <Col>tel: 48 662 717 018</Col>
+          <Col>tel: 48 574 500 298</Col>
         </Row>
       </A>
     </address>
